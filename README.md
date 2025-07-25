@@ -36,21 +36,7 @@ npm install
 Ensure that MySQL is installed and running. Create a database (e.g., learning_support_db) to store your application data.
 
 2. Environment Variables:
-Create a .env file in the root directory and add the following configuration:
-
-```env
-DB_NAME=your_database_name
-DB_USER=root
-DB_PASSWORD=your_database_password
-DB_DIALECT=mysql
-DB_LOGGING=false
-DB_HOST=localhost
-DB_PORT=your_database_port
-
-SESSION_SECRET=your-session-secret-key
-NODE_ENV=development
-PORT=your_backend_server_port
-```
+Create a .env file in the root directory as in the .env.example file.
 ## Development Mode
 To run the backend in development mode, use:
 
