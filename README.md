@@ -73,16 +73,6 @@ Routes are protected using express-session. Access to certain routes requires sp
 ## Authentication
 The system uses session-based authentication via express-session. After successful login, users will receive a session cookie that persists until they log out or the session expires.
 
-## Security Features
-Password Hashing: All passwords are hashed using bcrypt before being stored in the database.
-Input Validation: Zod is used for validating inputs to ensure data integrity and security.
-Session Management: Sessions are securely handled using express-session, and tokens are stored in HTTP-only cookies to prevent XSS attacks.
-Sensitive Data: All sensitive data, including passwords and PII, are protected using encryption (AES-256) and transmitted securely over HTTPS.
-
-## Cron Jobs
-The backend utilizes node-cron to manage background tasks such as:
-User Cleanup: Periodic clean-up of expired or inactive user data.
-Notifications: Sending notifications to parents or students based on predefined conditions.
 
 ## License
 This project is licensed under the Non-Commercial Use License. You may not use, distribute, or sell the application or any part of it for commercial purposes.
